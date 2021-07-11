@@ -38,10 +38,12 @@ for word in dividedString:
         word = word[:len(word) - 1] + str(word).upper()[len(word) - 1]
         answer += word + ' '
 
-print()
-print("Переробленний рядок:", answer)
+print("\nПереробленний рядок:", answer)
 
-maxInNumbers = max(numbers)
+try: 
+    maxInNumbers = max(numbers)
+except:
+    maxInNumbers = 0
 print("\nМаксимальне число -", maxInNumbers)
 
 for i in range(len(numbers)):
